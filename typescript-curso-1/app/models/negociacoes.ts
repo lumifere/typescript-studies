@@ -3,11 +3,16 @@ import { Negociacao } from "./negociacao.js";
 export class Negociacoes {
   private negociacoes: Array<Negociacao> = [];
 
-  constructor(negociacao: Negociacao) {
-    this.negociacoes.push(negociacao);
-  }
-
   adiciona(negociacao: Negociacao): void{
     this.negociacoes.push(negociacao);
   }
+
+  lista(): Array<Negociacao> {
+    return this.negociacoes;
+  }
 }
+
+const negociacoes = new Negociacoes();
+negociacoes.lista().forEach(n => {
+  n
+})
