@@ -1,6 +1,6 @@
 export class Negociacoes {
     constructor() {
-        this.negociacoes = [];
+        this.negociacoes = []; // Pode ser também Array<Negociacao>
     }
     adiciona(negociacao) {
         this.negociacoes.push(negociacao);
@@ -9,7 +9,4 @@ export class Negociacoes {
         return this.negociacoes;
     }
 }
-const negociacoes = new Negociacoes();
-negociacoes.lista().forEach(n => {
-    n;
-});
+;
